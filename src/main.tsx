@@ -1,10 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.tsx";
+import { createTheme } from "welcome-ui/theme";
+import { WuiProvider } from "welcome-ui/WuiProvider";
 
-createRoot(document.getElementById('root')!).render(
+const theme = createTheme();
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <WuiProvider theme={theme}>
+      <App />
+    </WuiProvider>
+  </StrictMode>
+);
