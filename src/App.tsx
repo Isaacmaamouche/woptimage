@@ -1,7 +1,7 @@
 import { Box } from "welcome-ui/Box";
 import "./App.css";
 import { ResponsiveImage } from "./ResponsiveImage";
-import image from "./assets/image.png";
+import image from "./assets/test/image.jpg";
 import image400 from "./assets/image-400.png";
 import image800 from "./assets/image-800.png";
 import image1200 from "./assets/image-1200.png";
@@ -16,7 +16,7 @@ function App() {
         sizes="100vw"
       />
 
-      <ResponsiveImage src={image} width={600} />
+      <ResponsiveImage src={image} width={1600} />
     </>
   );
 }
